@@ -4,6 +4,7 @@
 
 ## 1. [proxy](bili_proxy.py)
 设置代理。
+
 ### 1.1 [Uesr-Agent](bili_proxy.py)
 本项目默认提供100个User-Agent，无需设置。
 ```
@@ -18,6 +19,7 @@ getHead(isProxy=False, delayTime=0.2, proxyHost=None, proxyPort=None, proxyUser=
 
 ## 2. [danmu](bili_danmu.py)
 调用接口解析弹幕。
+
 ### 2.1 [弹幕](bili_danmu.py)
 通过cid读取弹幕，解析为txt文本。
 ```
@@ -26,6 +28,7 @@ getBarrage(cid, isProxies=False)
 
 ## 3. [id](bili_id.py)
 提供av号、bv号、cv号的转换。
+
 ### 3.1 [av号转bv号](bili_id.py)
 通过访问视频主站提取bv号。
 ```
