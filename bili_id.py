@@ -44,5 +44,5 @@ def bv2av(bid, isProxy=False):
 
 
 def bv2cv(bid, isProxy=False):
-    info = bInfo.getInfo(bid, isProxy=isProxy)
+    info = bInfo.getInfoMain(bid, isProxy=isProxy)
     return info['cid']

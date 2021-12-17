@@ -6,7 +6,7 @@ import bili_danmu as bDanmu
 import bili_id as bId
 
 
-def getInfo(bid, isProxy=False):
+def getInfoMain(bid, isProxy=False):
     proxies, headers = bProxy.getHead(isProxy=isProxy)
     api = 'https://api.bilibili.com/x/web-interface/view?bvid=' + bid
 
@@ -42,7 +42,7 @@ def getInfoAll(bid, isProxy=False):
 def infoResolution(aid):
     try:
         bid = bId.av2bv(aid)
-        info = getInfo(bid)
+        info = getInfoMain(bid)
         cid = info['cid']
         title = info['title']
         stat = info['stat']
