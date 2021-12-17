@@ -1,5 +1,5 @@
 # b站公开API接口的调用
-
+# 作者：Stanley Sun
 # 已实现功能
 
 ## 1. [proxy](bili_proxy.py)
