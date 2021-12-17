@@ -23,7 +23,7 @@ getHead(isProxy=False, delayTime=0.2, proxyHost=None, proxyPort=None, proxyUser=
 ### 2.1 [弹幕](bili_danmu.py)
 通过cid读取弹幕，解析为txt文本。
 ```
-getBarrage(cid, isProxies=False)
+getBarrage(cid, isProxy=False)
 ```
 
 ## 3. [id](bili_id.py)
@@ -60,4 +60,16 @@ def getInfoMain(bid, isProxy=False)
 解析为json后返回所有信息。
 ```
 def getInfoAll(bid, isProxy=False)
+```
+
+### 4.3 [处理数据](bili_info.py)
+获取首页推荐，返回DataFrame和date。
+```
+def getMainPage(isProxy=False)
+```
+
+### 4.4 [处理数据](bili_info.py)
+将json数据解析为list格式，并保存弹幕。
+```
+def infoResolution(aid,isProxy = False)
 ```

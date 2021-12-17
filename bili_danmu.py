@@ -3,12 +3,12 @@ import requests
 import bili_proxy as bProxy
 
 
-def getBarrage(cid, isProxies=False):
+def getBarrage(cid, isProxy=False):
     proxies, headers = bProxy.getHead()
     api = 'https://api.bilibili.com/x/v1/dm/list.so?oid=' + str(cid)
     res = []
 
-    if isProxies:
+    if isProxy:
         r = requests.get(api, proxies=proxies, headers=headers)
     else:
         r = requests.get(api, headers=headers)
