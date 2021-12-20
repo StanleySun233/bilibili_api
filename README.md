@@ -62,7 +62,7 @@ def getInfoMain(bid, isProxy=False)
 def getInfoAll(bid, isProxy=False)
 ```
 
-### 4.3 [处理数据](bili_info.py)
+### 4.3 [当天首页推荐](bili_info.py)
 获取首页推荐，返回DataFrame和date。
 ```
 def getMainPage(isProxy=False)
