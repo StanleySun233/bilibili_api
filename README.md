@@ -48,7 +48,7 @@ bv2cv(bid, isProxy=False)
 ```
 
 ## 4. [info](bili_info.py)
-通过调用接口获取json字典，解析为dict结构。
+各种关于视频信息的接口转化为本地数据。
 
 ### 4.1 [解析主要数据](bili_info.py)
 解析为json后提取键data。
