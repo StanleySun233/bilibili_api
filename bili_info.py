@@ -41,7 +41,7 @@ def getInfoAll(bid, isProxy=False):
     return info
 
 
-def infoResolution(aid, isProxy=False):
+def infoResolution(aid, path="data\\danmu\\", isProxy=False):
     try:
         isP = isProxy
         bid = bId.av2bv(aid, isProxy=isP)
@@ -58,14 +58,14 @@ def infoResolution(aid, isProxy=False):
 
         danmu = bDanmu.getBarrage(cid, isProxy=isP)
 
-        if len(danmu) >= 5:
-            f = open("data\\danmu\\av" + str(aid) + ".txt", 'w')
+        if len(danmu) >= 2:
+            f = open(path + "av" + str(aid) + ".txt", 'w', encoding='utf-8')
             for i in danmu:
                 f.writelines(i + '\n')
             f.close()
 
-        return [title, view, danmaku, fav, coin, share, like]
-    except:
+        return [bid, title, view, danmaku, fav, coin, share, like]
+    except TypeError:
         return None
 
 

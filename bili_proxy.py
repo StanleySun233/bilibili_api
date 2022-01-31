@@ -5,7 +5,7 @@ import time
 def getRandomUA(path='2021-100-PC.txt'):
     f = open(path, 'r')
     UA = f.readlines()
-    index = random.randint(0, len(UA))
+    index = random.randint(0, len(UA) - 1)
     return UA[index].replace("\n", "")
 
 
